@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Terri's Top Treatments | Custom Window Treatments, Bedding, and Slipcovers</title>
+<meta charset="utf-8" />
+  <meta name="author" content="Terri Staten" />
+  <meta name="keywords" content="terri, staten, terri staten, slipcovers, drapes, bedding, valances, pillows, robin, roman shades, window coverings, slipcovering, top treatments, top treatment, terri's top treatments, terri's top treatment, custom windows, beddings, pillow treatments, custom cushions for benches, window seats, chairs" />
+  <meta name="description" content="Terri's Top Treatments showcases the works of Terri Staten's slipcovers, bedding, pillows, valances, and drapes!" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="googlebot" content="noarchive" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/galleria.js"></script>
+<script>Galleria.loadTheme('js/galleria.home.js');</script>
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+    // <![CDATA[
+        var timeout    = 1500;
+        var closetimer = 0;
+        var ddmenuitem = 0;
+
+        function ddmenu_open(){
+            ddmenu_canceltimer();
+               ddmenu_close();
+               ddmenuitem = $(this).find('ul').css('visibility', 'visible');
+        }
+
+        function ddmenu_close(){
+            if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+        }
+
+        function ddmenu_timer(){
+            closetimer = window.setTimeout(ddmenu_close, timeout);
+        }
+
+        function ddmenu_canceltimer(){
+            if(closetimer){
+                window.clearTimeout(closetimer);
+                closetimer = null;
+        }}
+
+        $(document).ready(function(){
+            $('#ddmenu > li').bind('mouseover', ddmenu_open)
+            $('#ddmenu > li').bind('mouseout',  ddmenu_timer)
+        });
+
+        document.onclick = ddmenu_close;
+    // ]]>
+    </script>
+</head>
+<body>
+<a href="index.html" target="_self"><img class="head-image" src="images/header.png" /></a>
+<div id="main">
+    <div id="nav">
+        <ul id="ddmenu">
+        <li><a href="index.html" target="_self">HOME</a></li>
+        <li><a href="#">GALLERY</a>
+            <ul id="gal">
+            <li><a href="bedding.html" target="_self">BEDDING</a></li>
+            <li><a href="drapes.html" target="_self">DRAPES</a></li>
+            <li><a href="slipcovers.html" target="_self">SLIPCOVERS</a></li>
+            <li><a href="valances.html" target="_self">VALANCES</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html" target="_self">CONTACT</a>
+            <ul id="con">
+            <li><a href="contact.html" target="_self">CONTACT INFO</a></li>
+            <li><a href="aboutme.html" target="_self">ABOUT ME</a></li>
+        </ul>
+        </li>
+        </ul>
+    </div>
+  <div id="content">
+  <div class="homeslider">
+    <img src="images/Bedding/Bedding.JPG" />
+    <img src="images/Pillows/Custompillows.JPG" />
+    <img src="images/Slipcovers/Loveseat.JPG" />
+    <img src="images/RomanShades/RSwithballtrim.JPG" />
+  </div>
+  <script>
+  $('.homeslider').galleria({
+    preload: 3,
+    transition: 'fade',
+    image_crop: true,
+    transition_speed: 400,
+    autoplay: true,
+    thumbnails: false
+  });
+  </script>
+  <div id="about">
+    <h1>ABOUT TERRI'S TOP TREATMENTS</h1>
+    <ul>
+      <li>25+ years experience sewing custom window treatments</li>
+      <li>10+ years sewing slipcovers</li>
+      <li>Bachelor of Science degree in Business</li>
+      <li>Member of the <a href="http://www.wcaa.org/">Window Coverings Association of America</a> since 2007</li>
+      <li>In home consultation fee applied toward cost of project</li>
+      <li>Can work with customer's fabric</li>
+      <li>Installation provided</li>
+      <li>High quality lining and interlining provided; All work guaranteed</li>
+      <li>Call today for an appointment 314-605-5193</li>
+    </ul><br />
+  <p class="quote">"Terri was great to work with - from picking out fabrics to the finished product.  Not only did she sew custom window treatments for me, she also sewed pillows, draft stoppers, and skylight sheers.  She did an amazing job and I will definitely be a returning customer!" -Robin Schoenherr</p>
+  </div>
+</div>
+  <div class="footer">Copyright (C) 2015 Terri Staten. Design by <a href="http://www.danieljost.com">Pxl Productions</a>.</div>
+</div>
+</body>
+</html>

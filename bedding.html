@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Terri's Top Treatments | Bedding Gallery</title>
+    <meta name="author" content="Terri Staten" />
+    <meta name="keywords" content="terri, staten, terri staten, slipcovers, drapes, bedding, valances, pillows, robin, roman shades, window coverings, slipcovering, top treatments, top treatment, terri's top treatments, terri's top treatment, custom windows, beddings, pillow treatments, custom cushions for benches, window seats, chairs" />
+    <meta name="description" content="Terri's Top Treatments showcases the works of Terri Staten's slipcovers, bedding, pillows, valances, and drapes!" />
+    <meta name="robots" content="index, follow, noarchive" />
+    <meta name="googlebot" content="noarchive" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="colorbox.css" rel="stylesheet" type="text/css" />
+    <link href="galleria.classic.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/galleria.js"></script>
+    <script>Galleria.loadTheme('js/galleria.classic.js');</script>
+    <script type="text/javascript">
+    // <![CDATA[
+        var timeout    = 1500;
+        var closetimer = 0;
+        var ddmenuitem = 0;
+
+        function ddmenu_open(){
+            ddmenu_canceltimer();
+               ddmenu_close();
+               ddmenuitem = $(this).find('ul').css('visibility', 'visible');
+        }
+
+        function ddmenu_close(){
+            if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+        }
+
+        function ddmenu_timer(){
+            closetimer = window.setTimeout(ddmenu_close, timeout);
+        }
+
+        function ddmenu_canceltimer(){
+            if(closetimer){
+                window.clearTimeout(closetimer);
+                closetimer = null;
+        }}
+
+        $(document).ready(function(){
+            $('#ddmenu > li').bind('mouseover', ddmenu_open)
+            $('#ddmenu > li').bind('mouseout',  ddmenu_timer)
+        });
+
+        document.onclick = ddmenu_close;
+    // ]]>
+    </script>
+</head>
+<body>
+<a href="index.html"><img class="head-image" src="images/header.png" /></a>
+<div id="main">
+    <div id="nav">
+        <ul id="ddmenu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">GALLERY</a>
+            <ul id="gal">
+            <li><a href="bedding.html">BEDDING</a></li>
+            <li><a href="drapes.html">DRAPES</a></li>
+            <li><a href="slipcovers.html">SLIPCOVERS</a></li>
+            <li><a href="valances.html">VALANCES</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">CONTACT</a>
+            <ul id="con">
+            <li><a href="contact.html">CONTACT INFO</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+  <div id="content">
+  <div class="gallery1">
+    <img src="images/Bedding/Bedding.JPG" />
+    <img src="images/Bedding/Bedding1.JPG" />
+    <img src="images/Bedding/Bedding2.JPG" />
+    <img src="images/Bedding/Bedding3.JPG" />
+    <img src="images/Bedding/Bedding4.JPG" />
+    <img src="images/Bedding/Bedding5.JPG" />
+    <img src="images/Bedding/Bedding6.JPG" />
+    <img src="images/Bedding/Bedding7.JPG" />
+    <img src="images/Pillows/Custompillows.JPG" />
+    <img src="images/Bedding/image5.jpg" />
+    <img src="images/Bedding/image1.jpg" />
+  </div>
+  <script>$('.gallery1').galleria({
+    autoplay: 5000,
+    transition: 'fade',
+    image_crop: true
+});
+</script>
+ </div>
+    <div class="footer">Copyright (C) 2015 Terri Staten. Design by <a href="http://www.danieljost.com">Pxl Productions</a>.
+  </div>
+</div>
+</body>
+</html>
